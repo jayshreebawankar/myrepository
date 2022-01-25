@@ -3,7 +3,7 @@ function sum(num1, num2){
 }
 
 num1 = 10
-num2 = 12
+num2 = 2423
 
 console.log(num1)
 console.log(num2)
