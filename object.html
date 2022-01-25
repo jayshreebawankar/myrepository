@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Type of Object creation in JavaScript
+        </title>
+    </head>
+    <body>
+        <script>
+            document.write('<h3>Object creation using Object Literal </h3>')
+            const name = {
+                fname : 'Ravindra',
+                mname : 'Shashikala',
+                twinSister : 'Mayuri',
+                youngerSister : 'Rohini'
+            }
+
+            document.writeln('My familly members are : '+name.fname+'  '+name.mname+'  '+name.twinSister+'  '+name.youngerSister);
+
+            document.writeln('<h3>Creating an object using new keyword </h3>')
+
+            const data = new college();
+
+            data.clgName = 'SMM';
+            data.location = 'sakkardara';
+            data.students = 1500;
+            data.grade = 'A';
+
+           for(value in data) {
+                document.write(data[value] + ' ');
+           }
+        
+           function employee(id, name, salary){
+               this.id;
+               this.name;
+               this.salary;
+           }
+           
+           const emp = new employee(101, 'JAYSHREE BAWANKAR', 20000);
+
+           document.write(emp.id)
+
+           for(let value in emp){
+               document.write('Data of Employee : '+emp[value]+' ');
+            }
+        </script>
+    </body>
+</html>

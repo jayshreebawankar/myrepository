@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Practice of function call method :
+        </title>
+    </head>
+    <body>
+        <script>
+            function emp(id, name){
+                this.id;
+                this.name;
+            }
+            function permanentEmp(id, name){
+                emp.call(id, name);
+            }
+            function temporaryEmp(id, name){
+                permanentEmp.call(id, name);
+            }
+
+            pEmp = new permanentEmp(101, 'jayshree');
+            tEmp = new temporaryEmp(102, 'rohini');
+
+            document.write(pEmp.id +' '+pEmp.name);
+            document.write(tEmp.id +' '+tEmp.name);
+        </script>
+    </body>
+</html>
